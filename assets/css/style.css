@@ -69,7 +69,7 @@ li {
 }
 
 .edu-header .header-info p {
-  background-image: url("http://www.educationboardresults.gov.bd/images/bar_bk.jpg");
+  background-image: url("../../bar_bk.jpg");
   margin-bottom: 0px;
   font-size: 11px;
   color: #fff;
