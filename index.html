@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Database System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="edu-wraper">
+      <div class="edu-container shadow-sm">
+        <div class="edu-header">
+          <div class="header-logo">
+            <img
+              src="http://www.educationboardresults.gov.bd/images/bd_logo.png"
+              alt=""
+            />
+          </div>
+          <div class="header-info">
+            <div class="header-top">
+              <h2>Ministry of Education</h2>
+              <img
+                src="http://www.educationboardresults.gov.bd/images/banner_flag.jpg"
+                alt=""
+              />
+            </div>
+            <hr />
+            <h2>Intermediate and Secondary Education Boards Bangladesh</h2>
+            <p>Official Website of Education Board</p>
+          </div>
+        </div>
+        <div class="edu-body">
+          <div class="result-form">
+            <form id="result-search-form">
+              <div class="form-fields-row">
+                <label for=""> Examination </label>
+                <span>:</span>
+                <select name="examination" id="">
+                  <option value="">-Examination-</option>
+                  <option value="hsc">HSC/Alim/Equivalent</option>
+                  <option value="jsc">JSC/JDC</option>
+                  <option value="ssc">SSC/Dakhil</option>
+                  <option value="ssc_voc">SSC(Vocational)</option>
+                  <option value="hsc">HSC/Alim</option>
+                  <option value="hsc_voc">HSC(Vocational)</option>
+                  <option value="hsc_hbm">HSC(BM)</option>
+                  <option value="hsc_dic">Diploma in Commerce</option>
+                  <option value="hsc">Diploma in Business Studies</option>
+                </select>
+              </div>
+              <div class="form-fields-row">
+                <label for=""> Year </label>
+                <span>:</span>
+                <select name="year" id="">
+                  <option value="0000">-Select Year -</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                  <option value="1996">1996</option>
+                </select>
+              </div>
+              <div class="form-fields-row">
+                <label for=""> Board </label>
+
+                <span>:</span>
+                <select name="board" id="">
+                  <option value="">-select board-</option>
+                  <option value="barisal">Barisal</option>
+                  <option value="chittagong">Chittagong</option>
+                  <option value="comilla">Comilla</option>
+                  <option value="dhaka">Dhaka</option>
+                  <option value="dinajpur">Dinajpur</option>
+                  <option value="jessore">Jessore</option>
+                  <option value="mymensingh">Mymensingh</option>
+                  <option value="rajshahi">Rajshahi</option>
+                  <option value="sylhet">Sylhet</option>
+                  <option value="madrasah">Madrasah</option>
+                  <option value="tec">Technical</option>
+                  <option value="dibs">DIBS(Dhaka)</option>
+                </select>
+              </div>
+              <div class="form-fields-row">
+                <label for=""> Roll </label>
+                <span>:</span>
+                <input type="text" name="roll" />
+              </div>
+              <div class="form-fields-row">
+                <label for=""> Reg:No </label>
+                <span>:</span>
+                <input type="text" name="reg" />
+              </div>
+              <div class="form-fields-row">
+                <label for="" id="edi-plz"> </label>
+                <span>:</span>
+                <input type="text" name="pzl" />
+              </div>
+              <div class="form-fields-row btns">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="edu-footer">
+          <p>©2005-2024 Ministry of Education, All rights reserved.</p>
+          <ul>
+            <li>Powered by</li>
+            <li>
+              <img
+                src="http://www.educationboardresults.gov.bd/images/tbl_logo.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/functions.js"></script>
+    <script src="./src/models.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
